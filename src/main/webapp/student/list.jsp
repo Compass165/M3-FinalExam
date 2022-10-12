@@ -12,7 +12,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Bootstrap User Management Data Table</title>
+  <title>Quản lý học viên</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -202,7 +202,7 @@
           </div>
           <div>
             <form action="/students?action=find" method="post">
-              <input type="text" name="search" id="search" placeholder="country">
+              <input type="text" name="search" id="search" placeholder="Nhập tên">
               <input type="submit" value="Search">
             </form>
           </div>

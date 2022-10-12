@@ -1,6 +1,9 @@
 package controller;
 
+import model.Classroom;
 import model.Student;
+import service.ClassService;
+import service.IClassService;
 import service.IStudentService;
 import service.StudentService;
 
@@ -21,8 +24,10 @@ import java.util.List;
 public class StudentServlet extends HttpServlet {
 
    private IStudentService studentService;
+   private IClassService classService;
    public void init() {
        studentService = new StudentService();
+       classService = new ClassService();
    }
 
     @Override
@@ -131,6 +136,8 @@ public class StudentServlet extends HttpServlet {
     }
 
     private void showEdit(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        List<Classroom> classes = classService.selectAllClasses();
+        request.setAttribute("classes", classes);
        int id = Integer.parseInt(request.getParameter("id"));
        Student student = (Student) studentService.selectById(id);
        RequestDispatcher dispatcher;
@@ -145,7 +152,9 @@ public class StudentServlet extends HttpServlet {
     }
 
     private void showCreate(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        RequestDispatcher dispatcher = request.getRequestDispatcher("student/create.jsp");
+       List<Classroom> classes = classService.selectAllClasses();
+       request.setAttribute("classes", classes);
+       RequestDispatcher dispatcher = request.getRequestDispatcher("student/create.jsp");
         dispatcher.forward(request, response);
     }
 

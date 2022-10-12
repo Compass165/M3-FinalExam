@@ -25,8 +25,8 @@ public class ClassService implements IClassService{
 
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()){
-                int id = resultSet.getInt("class_id");
-                String name = resultSet.getString("class_name");
+                int id = resultSet.getInt("id");
+                String name = resultSet.getString("className");
                 classes.add(new Classroom(id, name));
             }
         } catch (SQLException e) {
