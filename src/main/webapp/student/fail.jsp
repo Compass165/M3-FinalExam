@@ -8,9 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Lỗi-404</title>
 </head>
 <body>
-
+<h1 style="color: red">Dính lỗi gòi alo alo @@~</h1>
 </body>
 </html>

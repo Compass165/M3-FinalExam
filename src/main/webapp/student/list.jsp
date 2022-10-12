@@ -194,7 +194,7 @@
       <div class="table-title">
         <div class="row">
           <div class="col-sm-5">
-            <h2>Student <b>Management</b></h2>
+            <h2>Quản lý <b>Học viên</b></h2>
           </div>
           <div class="col-sm-7">
             <a href="/students?action=create" class="btn btn-secondary"><i class="material-icons">&#xE147;</i> <span>Add New User</span></a>
@@ -213,12 +213,12 @@
       <table class="table table-striped table-hover">
         <thead>
         <tr>
-          <th>Id</th>
-          <th>Name</th>
-          <th>Date Of Birth</th>
+          <th>ID</th>
+          <th>Họ tên</th>
+          <th>Ngày sinh</th>
           <th>Email</th>
-          <th>Address</th>
-          <th>Action</th>
+          <th>Địa chỉ</th>
+          <th>Trạng thái</th>
         </tr>
         </thead>
         <tbody>
