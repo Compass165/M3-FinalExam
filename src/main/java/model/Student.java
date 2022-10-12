@@ -39,6 +39,16 @@ public class Student {
         this.classroom_id = classroom_id;
     }
 
+    public Student(int id, String name, LocalDate dateOfBirth, String address, String phone, String email, int classroom_id) {
+        this.id = id;
+        this.name = name;
+        this.dateOfBirth = dateOfBirth;
+        this.address = address;
+        this.phone = phone;
+        this.email = email;
+        this.classroom_id = classroom_id;
+    }
+
     public int getId() {
         return id;
     }
@@ -55,7 +65,7 @@ public class Student {
         this.name = name;
     }
 
-    public LocalDate getDateOfBirth() {
+    public String getDateOfBirth() {
         return dateOfBirth;
     }
 
