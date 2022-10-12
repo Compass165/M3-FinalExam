@@ -40,7 +40,7 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-12">
-                            <h4>Create Student</h4>
+                            <h4>Tạo mới học viên</h4>
                             <hr>
                         </div>
                     </div>
@@ -48,19 +48,19 @@
                         <div class="col-md-12">
                             <form method="post" action="/students?action=create">
                                 <div class="form-group row">
-                                    <label for="username" class="col-4 col-form-label">Full Name*</label>
+                                    <label for="username" class="col-4 col-form-label">Họ tên đầy đủ*</label>
                                     <div class="col-8">
                                         <input id="username" name="name" placeholder="name" class="form-control here" required="required" type="text">
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="name" class="col-4 col-form-label">Birthday</label>
+                                    <label for="name" class="col-4 col-form-label">Ngày sinh</label>
                                     <div class="col-8">
                                         <input id="name" name="dateOfBirth" placeholder="First Name" class="form-control here" type="date">
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="address" class="col-4 col-form-label">Address</label>
+                                    <label for="address" class="col-4 col-form-label">Địa chỉ</label>
                                     <div class="col-8">
                                         <input id="address" name="address" placeholder="Address" class="form-control here" type="text">
                                     </div>
@@ -72,13 +72,13 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="phone" class="col-4 col-form-label">Phone Number*</label>
+                                    <label for="phone" class="col-4 col-form-label">Liên hệ*</label>
                                     <div class="col-8">
                                         <input id="phone" name="phone" placeholder="Phone Number" class="form-control here" type="text">
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="select" class="col-4 col-form-label">Class*</label>
+                                    <label for="select" class="col-4 col-form-label">Lớp*</label>
                                     <div class="col-8">
                                         <select id="select" name="classroom" class="custom-select">
                                             <c:forEach var="classroom" items="${classes}">
@@ -89,7 +89,7 @@
                                 </div>
                                 <div class="form-group row">
                                     <div class="offset-4 col-8">
-                                        <button name="submit" type="submit" class="btn btn-primary">Create</button>
+                                        <button name="submit" type="submit" class="btn btn-primary">Tạo</button>
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -103,7 +103,7 @@
                                 </div>
                                 <div class="form-group row">
                                     <div class="offset-4 col-8">
-                                        <a href="/students" class="btn btn-primary">Back to list</a>
+                                        <a href="/students" class="btn btn-primary">Trở về</a>
                                     </div>
                                 </div>
                             </form>
