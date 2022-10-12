@@ -88,7 +88,7 @@ public class StudentService implements IStudentService<Student>{
                 String address = resultSet.getString("address");
                 String phone = resultSet.getString("phone");
                 String email = resultSet.getString("email");
-                int class_id = resultSet.getInt("class_id");
+                int class_id = resultSet.getInt("classroom_id");
                 student = new Student(id, name, LocalDate.parse(dateOfBirth), address, phone, email, class_id);
             }
 
@@ -150,7 +150,7 @@ public class StudentService implements IStudentService<Student>{
                 String address = resultSet.getString("address");
                 String phone = resultSet.getString("phone");
                 String email = resultSet.getString("email");
-                int class_id = resultSet.getInt("class_id");
+                int class_id = resultSet.getInt("classroom_id");
                 students.add(new Student(id, name, LocalDate.parse(dateOfBirth), address, phone, email, class_id));
             }
 

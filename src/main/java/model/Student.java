@@ -49,6 +49,15 @@ public class Student {
         this.classroom_id = classroom_id;
     }
 
+    public Student(String name, LocalDate dateOfBirth, String address, String phone, String email, int classroom_id) {
+        this.name = name;
+        this.dateOfBirth = dateOfBirth;
+        this.address = address;
+        this.phone = phone;
+        this.email = email;
+        this.classroom_id = classroom_id;
+    }
+
     public int getId() {
         return id;
     }
@@ -66,11 +75,11 @@ public class Student {
     }
 
     public String getDateOfBirth() {
-        return dateOfBirth;
+        return String.valueOf(dateOfBirth);
     }
 
-    public void setDateOfBirth(LocalDate dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
+    public void setDateOfBirth(String dateOfBirth) {
+        this.dateOfBirth = LocalDate.parse(dateOfBirth);
     }
 
     public String getAddress() {
